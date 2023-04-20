@@ -7,34 +7,12 @@ ol,
   text-decoration: none;
 }
 
-/* Header */
-.menu-link {
+body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33x;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  /* color: #ffffff; */
 }
-.menu-link:hover,
-.menu-link:focus {
-  color: #ff6c00;
-}
-.contact-phone-number {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  /* color: #ffffff; */
-}
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-  color: #ff6c00;
-}
+
+/*=================Components========================*/
 .modul-btn {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -48,3 +26,78 @@ ol,
   background-color: #ff6c00;
   color: #ffffff;
 }
+.media-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+  color: #ff6c00;
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36x;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* color: rgba(157, 164, 189, 0.6); */
+}
+
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-light {
+  color: #303030;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  /* color: #9da4bd; */
+}
+/*=================Components========================*/
+
+/*=================Header========================*/
+.menu-link {
+  font-size: 12px;
+  line-height: 1.33x;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #ff6c00;
+}
+.contact-phone-number {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+  color: #ff6c00;
+}
+/*=================Header========================*/
+
+/*=================Hero=================================*/
+
+.main-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  /* color: #ffffff; */
+}
+
+/*=================Hero=================================*/
