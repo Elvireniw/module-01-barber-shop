@@ -1,0 +1,50 @@
+ol,
+.list {
+  list-style: none;
+}
+.link {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Header */
+.menu-link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33x;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #ff6c00;
+}
+.contact-phone-number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+  color: #ff6c00;
+}
+.modul-btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffffff;
+}
+.modul-btn:hover,
+.modul-btn:focus {
+  background-color: #ff6c00;
+  color: #ffffff;
+}

@@ -5,30 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Барбер Шоп в Києві</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/logo.svg" alt="логотипe"
+    <header class="page-header">
+      <!-- Header -->
+      <nav class="page-nav">
+        <a class="logo" href="./index.html"
+          ><img
+            class="logo-img"
+            src="./images/logo.svg"
+            alt="логотипe"
+            width="69"
+            height="55"
         /></a>
-        <ul>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#services">Послуги та ціни</a></li>
-          <li><a href="#our-team">Майстри</a></li>
-          <li><a href="#contacts">Контакти</a></li>
+        <ul class="menu list">
+          <li class="menu-item">
+            <a class="menu-link" href="#about">Про нас</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#services">Послуги та ціни</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#our-team">Майстри</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#contacts">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запис</button>
+      <a class="contact-phone-number link" href="tel:+380441111111"
+        >+38 044 111 11 11</a
+      >
+      <button class="modul-btn" type="button">онлайн-запис</button>
     </header>
     <main>
       <!-- Банер -->
-      <section>
+      <section class="hero">
         <div>
-          <ul>
-            <li><a href="" lang="en">Instagram</a></li>
-            <li><a href="" lang="en">Youtube</a></li>
+          <ul class="list">
+            <li><a class="link" href="" lang="en">Instagram</a></li>
+            <li><a class="link" href="" lang="en">Youtube</a></li>
           </ul>
         </div>
         <div>
@@ -43,7 +68,7 @@
       <!-- Про нас -->
       <section id="about">
         <div>
-          <ul>
+          <ul class="list">
             <li>
               <img
                 src="./img-about-us/img-1.jpg"
@@ -123,7 +148,7 @@
       <!-- Чому приходять саме до нас? -->
       <section>
         <div>
-          <ul>
+          <ul class="list">
             <li>
               <p>600</p>
               <p>Задоволених клієнтів на день</p>
@@ -155,7 +180,7 @@
       <section id="our-team">
         <p>для справжніх шанувальників атмосфери</p>
         <h2>Наші майстри</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./img-out-team/team-1.jpg"
@@ -192,7 +217,7 @@
       <section>
         <h2 hidden>Галерея робіт</h2>
         <p>Латинською мовою "барба" означає "борода"</p>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./img-gallery/gallery-1.jpg"
@@ -235,31 +260,34 @@
         <section id="contscts">
           <h2>Контакти</h2>
           <address>
-            <ul>
+            <ul class="list">
               <li>
                 <a
+                  class="link"
                   href="https://goo.gl/maps/NxUsDuTEMH88Ub1K8"
                   target="_blank"
                   rel="noopener noreferrer"
                   >вул. Василькова, 7А Київ, 08132</a
                 >
               </li>
-              <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+              <li>
+                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
               <li>
                 <a href="mailto:barbershop@email.com">barbershop@email.com</a>
               </li>
             </ul>
-            <h3>Години роботи</h3>
-            <p>Щоденно з 9:00 до 22:00</p>
           </address>
+          <h3>Години роботи</h3>
+          <p>Щоденно з 9:00 до 22:00</p>
         </section>
       </div>
     </main>
     <footer>
       <p>&copy; Copyright 2020</p>
       <ul>
-        <li><a href="" lang="en">Instagram</a></li>
-        <li><a href="" lang="en">Youtube</a></li>
+        <li><a class="link" href="" lang="en">Instagram</a></li>
+        <li><a class="link" href="" lang="en">Youtube</a></li>
       </ul>
     </footer>
   </body>
