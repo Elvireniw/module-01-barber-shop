@@ -1,14 +1,55 @@
+:root {
+  --primary-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-text-color-theme-dark: #9da4bd;
+  --primary-text-color-theme-light: #555;
+  --secondary-text-color-theme-dark: #fff;
+  --secondary-text-color-theme-light: #303030;
+  --accent-color: #ff6c00;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 ol,
 .list {
   list-style: none;
 }
+
 .link {
   list-style: none;
   text-decoration: none;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*=================Components========================*/
@@ -18,25 +59,24 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  cursor: pointer;
-  color: #ffffff;
+  color: var(--secondary-text-color-theme-dark);
 }
 .modul-btn:hover,
 .modul-btn:focus {
-  background-color: #ff6c00;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color-theme-dark);
 }
 .media-list-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .media-list-link:hover,
 .media-list-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 .suptitle {
@@ -53,7 +93,7 @@ body {
 }
 
 .suptitle-theme-light {
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .section-description {
@@ -64,29 +104,29 @@ body {
 }
 
 .section-description-light {
-  color: #9da4bd;
+  color: var(--primary-text-color-theme-dark);
 }
 
 .section-description-dark {
-  color: #555555;
+  color: var(--primary-text-color-theme-light);
 }
 
 .title-section {
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.67;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .title-services {
-  font-family: 'Raleway';
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  /* color: #ffffff; */
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 
 /*=================Components========================*/
@@ -97,33 +137,33 @@ body {
   line-height: 1.33x;
   letter-spacing: 0.1em;
   text-decoration: none;
-  /* color: #ffffff; */
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 .contact-phone-number {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-  /* color: #ffffff; */
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 .contact-phone-number:hover,
 .contact-phone-number:focus {
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 /*=================Header========================*/
 
 /*=================Hero=================================*/
 
 .main-title {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  /* color: #ffffff; */
+  /* color: var(--secondary-text-color-theme-dark); */
 }
 
 /*=================Hero=================================*/
@@ -135,7 +175,7 @@ body {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: #555555;
+  color: var(--primary-text-color-theme-light);
 }
 
 /*=================About us=============================*/
@@ -147,7 +187,7 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--primary-text-color-theme-dark);
 }
 
 /*=================Services=============================*/
@@ -160,10 +200,10 @@ body {
   line-height: 1.36;
   /* text-align: center; */
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
-.class=advantages-text {
+.advantages-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36x;
@@ -181,7 +221,7 @@ body {
   line-height: 1.39px;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .master-position {
@@ -190,7 +230,7 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #ff6c00;
+  color: var(--accent-color);
 }
 
 /*=================Our team=============================*/
@@ -203,7 +243,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--primary-text-color-theme-dark);
   text-decoration: none;
   text-align: none;
 }
@@ -213,18 +253,18 @@ body {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.02em;
-  color: #9da4bd;
+  color: var(--primary-text-color-theme-dark);
 }
 /*=================Online/Contacts=======================*/
 
 /*=================Footer================================*/
 
-.footer-text {
+.copyright {
   font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.2em;
-  color: #9da4bd;
+  color: var(--primary-text-color-theme-dark);
 }
 
 /*=================Footer================================*/
