@@ -1,11 +1,23 @@
 :root {
-  --primary-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
-  --primary-text-color-theme-dark: #9da4bd;
-  --primary-text-color-theme-light: #555;
-  --secondary-text-color-theme-dark: #fff;
-  --secondary-text-color-theme-light: #303030;
+  --main-font-family: 'Open Sans', sans-serif;
+  --secondary-font-family-family: 'Raleway', sans-serif;
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #303030;
+  --secondary-text-color-theme-dark: #9da4bd;
+  --secondary-text-color-theme-light: #555555;
   --accent-color: #ff6c00;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1,
@@ -17,8 +29,8 @@ p {
   margin-bottom: 0;
 }
 
-ol,
-ul {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -28,22 +40,8 @@ img {
   display: block;
 }
 
-button {
-  cursor: pointer;
-}
-
-ol,
-.list {
-  list-style: none;
-}
-
-.link {
-  list-style: none;
-  text-decoration: none;
-}
-
 body {
-  font-family: var(--primary-font);
+  font-family: var(--main-font-family);
 }
 
 .container {
@@ -54,36 +52,44 @@ body {
   padding-right: 15px;
 }
 
-/*=================Components========================*/
-
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
 }
 
-.modul-btn {
-  border: 1px solid #ff6c00;
+/* ================= COMPONENTS ================= */
+.modal-open-btn {
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
   border-radius: 25px;
-  padding: 11px 23px 11px 23px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
-  color: var(--secondary-text-color-theme-dark);
 }
-.modul-btn:hover,
-.modul-btn:focus {
+
+.modal-open-btn:hover,
+.modal-open-btn:focus {
   background-color: var(--accent-color);
-  color: var(--secondary-text-color-theme-dark);
 }
+
+.modal-open-btn-theme-dark {
+  /* color: #ffffff; */
+}
+
+.modal-open-btn-theme-light {
+  color: #303030;
+}
+
 .media-list-link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--secondary-text-color-theme-light);
+  color: var(--primary-text-color-theme-light);
 }
 
 .media-list-link:hover,
@@ -92,23 +98,27 @@ body {
 }
 
 .suptitle {
-  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36x;
+  line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  /* color: rgba(157, 164, 189, 0.6); */
+  margin-bottom: 20px;
 }
 
 .suptitle-theme-dark {
-  margin-bottom: 44px;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--secondary-text-color-theme-dark);
 }
 
 .suptitle-theme-light {
-  margin-bottom: 20px;
-  color: var(--secondary-text-color-theme-light);
+  color: var(--primary-text-color-theme-light);
+}
+
+.main-title {
+  font-family: var(--secondary-font-family);
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
 .section-description {
@@ -118,37 +128,37 @@ body {
   letter-spacing: 0.02em;
 }
 
-.section-description-light {
-  color: var(--primary-text-color-theme-dark);
-}
-
-.section-description-dark {
-  color: var(--primary-text-color-theme-light);
-}
-
-.title-section {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.67;
-  letter-spacing: 0.05em;
+.section-description-theme-light {
   color: var(--secondary-text-color-theme-light);
 }
 
-.title-services {
-  font-family: var(--secondary-font);
+.section-description-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}
+
+.title {
+  font-family: var(--secondary-font-family-family);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  /* color: var(--secondary-text-color-theme-dark); */
 }
 
-/*=================Components========================*/
+.title-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+  margin-bottom: 44px;
+}
 
-/*=================Header========================*/
+.title-theme-light {
+  color: var(--primary-text-color-theme-light);
+  margin-bottom: 20px;
+}
+/* ================= /COMPONENTS ================= */
 
+/* ================= HEADER ================= */
 .page-header {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -158,29 +168,24 @@ body {
   align-items: center;
 }
 
-.page-nav {
+.page-navigation {
   display: flex;
   align-items: center;
+  column-gap: 70px;
 }
 
 .menu {
   display: flex;
-  align-items: center;
+  column-gap: 40px;
 }
 
-.logo {
-  margin-right: 71px;
-}
-
-.menu-item:not(:last-child) {
-  margin-right: 40px;
-}
 .menu-link {
+  font-weight: 600;
   font-size: 12px;
-  line-height: 1.33x;
+  line-height: 1.33;
   letter-spacing: 0.1em;
-  text-decoration: none;
-  /* color: var(--secondary-text-color-theme-dark); */
+
+  /* color: #ffffff; */
 }
 
 .menu-link:hover,
@@ -188,101 +193,100 @@ body {
   color: var(--accent-color);
 }
 
-.contact-phone-number {
+.contact-tel {
+  font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
   margin-left: auto;
   margin-right: 40px;
-  /* color: var(--secondary-text-color-theme-dark); */
+
+  /* color: #ffffff; */
 }
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
+.contact-tel:hover,
+.contact-tel:focus {
   color: var(--accent-color);
 }
+/* ================= /HEADER ================= */
 
-/*=================Header========================*/
+/* ================= HERO ================= */
 
-/*=================Hero=================================*/
+/* ================= /HERO ================= */
 
-.main-title {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  /* color: var(--secondary-text-color-theme-dark); */
-}
-
-/*=================Hero=================================*/
-
-/*=================About us=============================*/
-
-.text-about {
+/* ================= ABOUT ================= */
+.about-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-light);
+  color: var(--secondary-text-color-theme-light);
 }
+/* ================= /ABOUT ================= */
 
-/*=================About us=============================*/
-
-/*=================Services=============================*/
-
-.table-item {
+/* ================= SERVICES ================= */
+.services-table-name,
+.services-table-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-dark);
 }
+/* ================= /SERVICES ================= */
 
-/*=================Services=============================*/
-
-/*=================Advantages===========================*/
-
-.advantages-title {
+/* ================= ADVANTAGES ================= */
+.advantages-list-quantity {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.05em;
-  color: var(--secondary-text-color-theme-light);
+  color: var(--primary-text-color-theme-light);
 }
 
-.advantages-text {
+.advantages-list-description {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36x;
-  /* text-align: center; */
-  color: #303030;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--primary-text-color-theme-light);
 }
+/* ================= /ADVANTAGES ================= */
 
-/*=================Advantages===========================*/
-
-/*=================Our team=============================*/
-
-.our-team {
+/* ================= EMPLOYEES ================= */
+.employees {
   background-color: #f7f7f7;
 }
 
-.our-team-title {
+.employees-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.employees-list-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.employees-title {
+  color: var(--primary-text-color-theme-light);
   margin-bottom: 44px;
 }
 
+.employees-list-text-content {
+  padding-top: 30px;
+}
+
 .employees-list-name {
-  margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 8px;
 }
 
-.master-position {
+.employees-list-position {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.36;
@@ -290,62 +294,40 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+/* ================= /EMPLOYEES ================= */
 
-.list-our-team {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
+/* ================= GALLERY ================= */
+/* ================= /GALLERY ================= */
 
-.our-team-item {
-  flex-basis: calc(100%-60 / 3);
-}
-
-.employees-card-wrapper {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-/* .our-team-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.our-team-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-} */
-
-/*=================Our team=============================*/
-
-/*=================Online/Contacts=======================*/
-
-.contacts-link {
-  font-style: normal;
+/* ================= CONTACT INFO ================= */
+.contact-list-link {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-dark);
-  text-decoration: none;
-  text-align: none;
+  color: var(--secondary-text-color-theme-dark);
 }
 
-.contacts-text {
+.contact-list-link:hover,
+.contact-list-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-info-date {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-theme-dark);
+  color: var(--secondary-text-color-theme-dark);
 }
-/*=================Online/Contacts=======================*/
+/* ================= /CONTACT INFO ================= */
 
-/*=================Footer================================*/
-
+/* ================= FOOTER ================= */
 .copyright {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
-  color: var(--primary-text-color-theme-dark);
+  color: var(--secondary-text-color-theme-dark);
 }
-
-/*=================Footer================================*/
+/* ================= /FOOTER ================= */
