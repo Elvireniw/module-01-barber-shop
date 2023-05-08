@@ -24,13 +24,9 @@
       <div class="container page-header-container">
         <nav class="page-navigation">
           <a class="logo" href="./index.html">
-            <img
-              class="logo-img"
-              src="./images/logo.svg"
-              alt="логотип"
-              width="68"
-              height="56"
-            />
+            <svg class="logo-img" width="68" height="56">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="menu list">
             <li class="menu-item">
@@ -59,14 +55,21 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container">
+        <div class="hero-container container">
           <div class="hero-left-side">
-            <ul class="media-list list">
-              <li class="media-list-item">
-                <a class="media-list-link link" href="" lang="en">Instagram</a>
+            <ul class="media-list-header list">
+              <li class="media-list-header-item">
+                <a
+                  class="inst-media-list-header-link media-list-header-link link"
+                  href=""
+                  lang="en"
+                  >Instagram</a
+                >
               </li>
-              <li class="media-list-item">
-                <a class="media-list-link link" href="" lang="en">Youtube</a>
+              <li class="media-list-header-item">
+                <a class="media-list-header-link link" href="" lang="en"
+                  >Youtube</a
+                >
               </li>
             </ul>
           </div>
@@ -90,7 +93,7 @@
               <li class="about-gallery-item">
                 <img
                   class="about-gallery-img"
-                  src="./img-about-us/img-1.jpg"
+                  src="./images/about-us/img-1.jpg"
                   alt="майстер голить бороду клієнту"
                   width="270"
                   height="445"
@@ -99,7 +102,7 @@
               <li class="about-gallery-item">
                 <img
                   class="about-gallery-img"
-                  src="./img-about-us/img-2.jpg"
+                  src="./images/about-us/img-2.jpg"
                   alt="майстер підстригає клієнта"
                   width="270"
                   height="445"
@@ -124,7 +127,7 @@
               нас приходить!
             </p>
             <button
-              class="modal-open-btn modal-open-btn-theme-light"
+              class="about-text-btn modal-open-btn modal-open-btn-theme-light"
               type="button"
             >
               онлайн-запис
@@ -239,7 +242,7 @@
             <li class="employees-list-item">
               <img
                 class="employees-list-img"
-                src="./img-out-team/team-1.jpg"
+                src="./images/out-team/team-1.jpg"
                 alt="майстер стриже клієнта"
                 width="370"
                 height="346"
@@ -247,12 +250,42 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">John Smith</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="employees-list-item">
               <img
                 class="employees-list-img"
-                src="./img-out-team/team-2.jpg"
+                src="./images/out-team/team-2.jpg"
                 alt="майстер стриже клієнта"
                 width="370"
                 height="346"
@@ -260,12 +293,42 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">Michele Doe</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="employees-list-item">
               <img
                 class="employees-list-img"
-                src="./img-out-team/team-3.jpg"
+                src="./images/out-team/team-3.jpg"
                 alt="майстер стриже клієнта"
                 width="370"
                 height="346"
@@ -273,6 +336,36 @@
               <div class="employees-list-text-content">
                 <h3 class="employees-list-name" lang="en">Alan Black</h3>
                 <p class="employees-list-position" lang="en">Extreme Barber</p>
+                <ul class="social-list list">
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a class="social-list-link" href="">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -289,7 +382,7 @@
             <li class="gallery-list-item">
               <img
                 class="gallery-list-img"
-                src="./img-gallery/gallery-1.jpg"
+                src="./images/gallery/gallery-1.jpg"
                 alt="майстер стриже клієнта"
                 width="270"
                 height="360"
@@ -298,7 +391,7 @@
             <li class="gallery-list-item">
               <img
                 class="gallery-list-img"
-                src="./img-gallery/gallery-2.jpg"
+                src="./images/gallery/gallery-2.jpg"
                 alt="майстер голить бороду клієнту"
                 width="270"
                 height="360"
@@ -307,7 +400,7 @@
             <li class="gallery-list-item">
               <img
                 class="gallery-list-img"
-                src="./img-gallery/gallery-3.jpg"
+                src="./images/gallery/gallery-3.jpg"
                 alt="майстер голить бороду клієнту"
                 width="270"
                 height="360"
@@ -316,7 +409,7 @@
             <li class="gallery-list-item">
               <img
                 class="gallery-list-img"
-                src="./img-gallery/gallery-4.jpg"
+                src="./images/gallery/gallery-4.jpg"
                 alt="майстер стриже клієнта"
                 width="270"
                 height="360"
@@ -379,7 +472,12 @@
         <p class="copyright">&#xa9; Copyright 2020</p>
         <ul class="media-list list">
           <li class="media-list-item">
-            <a class="media-list-link link" href="" lang="en">Instagram</a>
+            <a
+              class="media-list-link-footer media-list-link link"
+              href=""
+              lang="en"
+              >Instagram</a
+            >
           </li>
           <li class="media-list-item">
             <a class="media-list-link link" href="" lang="en">Youtube</a>
