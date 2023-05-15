@@ -46,7 +46,11 @@
         <a class="contact-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="modal-open-btn modal-open-btn-theme-dark" type="button">
+        <button
+          data-modal-open
+          class="modal-open-btn modal-open-btn-theme-dark"
+          type="button"
+        >
           онлайн-запис
         </button>
       </div>
@@ -452,7 +456,7 @@
                 </li>
                 <li class="contact-list-item">
                   <a
-                    class="contact-list-link"
+                    class="contact-list-link link"
                     href="mailto:barbershop@email.com"
                     >barbershop@email.com</a
                   >
@@ -485,5 +489,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
