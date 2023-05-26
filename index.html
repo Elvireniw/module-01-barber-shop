@@ -489,13 +489,24 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="modal-contact-form">
+          <label class="mdal-contact-form-field-wrapper" for="">
+            Name<input
+              class="modal-contact-form-input"
+              type="text"
+              name="user_name"
+              required
+              pattern="[a-zA-Za-яА-ЯіІїЇєЄ']+"
+          /></label>
+          <button type="submit" class="modal-contact-form-submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
